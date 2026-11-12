@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INEC VOTE ELIGIBILITY CHECKER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="checker-card">
+      <div class="badge">Civic Services</div>
+      <h3>INEC Eligibility Checker</h3>
+      <p class="subtitle">
+        Confirm whether you are eligible to vote in Nigeria.
+      </p>
+
+      <label class="form-label" for="input">Birth year</label>
+      <input
+        id="input"
+        type="text"
+        placeholder="Enter your birth year"
+        aria-label="Enter your birth year"
+        inputmode="numeric"
+        maxlength="4"
+      />
+
+      <div class="status-box" id="display" aria-live="polite">
+        Your result will show here!
+      </div>
+
+      <button type="button" onclick="check()">Check Eligibility</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

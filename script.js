@@ -22,13 +22,14 @@ function check() {
     return;
   }
 
-  // if (birthYear > currentYear) {
-  //   displayArea.innerHTML = `<p>Your birth year should not be greater than the current year!</p>`
-  // }
+  if (birthYear > currentYear) {
+    displayArea.innerHTML = `<p>Your birth year should not be greater than the current year!</p>`
+    return
+  }
 
-  // if (eligibility >= 18) {
-  //   displayArea.innerHTML = `<p>You are eligible to vote!</p>`
-  // } else {
-  //   displayArea.innerHTML = `<p>You are not eligible to vote. Come back in ${eligibility} years time!</p>`
-  // }
+  if (eligibility >= 18) {
+    displayArea.innerHTML = `<p>You are eligible to vote!</p>`
+  } else {
+    displayArea.innerHTML = `<p>You are not eligible to vote. Come back in ${18 -eligibility} years time!</p>`
+  }
 }

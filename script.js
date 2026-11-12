@@ -30,6 +30,14 @@ function check() {
   if (eligibility >= 18) {
     displayArea.innerHTML = `<p>You are eligible to vote!</p>`
   } else {
-    displayArea.innerHTML = `<p>You are not eligible to vote. Come back in ${18 - eligibility} years!</p>`
+    let yearsLeft = 18 - eligibility
+    let yearWord
+    if (yearsLeft == 1) {
+      yearWord = 'year'
+    } else {
+      yearWord = 'years'
+    }
+    displayArea.innerHTML = `<p>You are not eligible to vote. Come back in ${yearsLeft} ${yearWord}!</p>`
   }
 }
+

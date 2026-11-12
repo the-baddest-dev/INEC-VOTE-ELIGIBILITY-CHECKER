@@ -29,8 +29,6 @@ function check() {
 
   if (eligibility >= 18) {
     displayArea.innerHTML = `<p>You are eligible to vote!</p>`
-  } else if (birthYear == 2009) {
-    displayArea.innerHTML = `<p>You are not eligible to vote. Come back in ${18 - eligibility} year!</p>`
   } else {
     displayArea.innerHTML = `<p>You are not eligible to vote. Come back in ${18 - eligibility} years!</p>`
   }

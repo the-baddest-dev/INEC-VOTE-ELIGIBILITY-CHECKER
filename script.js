@@ -7,7 +7,7 @@ function check() {
 
   let eligibility = currentYear - Number(birthYear)
 
-  if (birthYear == '') {
+  if (birthYear == '' || birthYear == ' ' || birthYear == '    ') {
     displayArea.innerHTML = `<p>Input should not be empty!</p>`
     return;
   }
